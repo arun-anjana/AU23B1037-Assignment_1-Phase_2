@@ -1,0 +1,16 @@
+def brand_available():
+    ls=["Nike", "Adidas", "Reebok"]
+    brand = input("which brand you were looking for")
+    for i in ls:
+        if(brand==i):
+            print("the brand you were looking for is available in our shop")
+            break
+    else:
+        print("brand is not available")
+
+
+def tshirt_brand():
+    get_name()
+    brand_available()
+
+print(tshirt_brand())
