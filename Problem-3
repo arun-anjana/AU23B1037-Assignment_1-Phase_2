@@ -1,0 +1,16 @@
+def get_order(orders):
+    processed_orders = []
+    for i in range(0,len(orders)):
+        print("Preparing Your Order - ",orders[i])
+        processed_orders.append(orders[i])
+    print("The following orders have been dispatched:")
+    while len(orders)>0:
+        print(orders[0])
+        orders.remove(orders[0])
+      
+
+order_size = int(input("Enter the number of items "))
+order_list = []
+for j in range(0,order_size):
+    order_list.append(input("type order => "))
+get_order(order_list)
